@@ -232,11 +232,11 @@ class TgUploader:
                 else:
                     notMedia = True
             if self.__as_doc or notMedia:
-                if is_video and thumb is None:
-                    thumb = take_ss(up_path, None)
-                    if self.__is_cancelled:
-                        if self.__thumb is None and thumb is not None and ospath.lexists(thumb):
-                            osremove(thumb)
+             #   if is_video and thumb is None:
+              #      thumb = take_ss(up_path, None)
+               #     if self.__is_cancelled:
+                #        if self.__thumb is None and thumb is not None and ospath.lexists(thumb):
+                 #           osremove(thumb)
                         return
                 if 'is_leech_log' in user_data and user_data.get('is_leech_log'):
                     for leechchat in self.__leech_log:
